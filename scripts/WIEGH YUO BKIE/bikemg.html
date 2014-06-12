@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bikemg</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bikemg - a simple bike weight calculator</h1>
+				<div id="accordion">
+					<h3>Frame</h3>
+					<div>
+						<div class="col-xs-6">
+							<h4>Manufacturer</h4>
+							<ul>
+								<li id="specframe">Specialized</li>
+								<li id="trekframe">Trek</li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<h4>Model</h4>
+							<div id="theframe">
+								<div id="specframes" class="hidden">
+									<input type="radio" name="frametype" value="Epic Comp">Epic Comp<br>
+									<input type="radio" name="frametype" value="Enduro Carbon">Enduro Carbon<br>
+									<input type="radio" name="frametype" value="Enduro Comp">Enduro Comp<br>
+									<input type="radio" name="frametype" value="Stumpjumper Comp">Stumpjumper Comp<br>
+								</div>
+								<div id="trekframes" class="hidden">
+									<input type="radio" name="frametype" value="Remedy Carbon">Remedy Carbon<br>
+									<input type="radio" name="frametype" value="Slash Comp">Slash Comp<br>
+									<input type="radio" name="frametype" value="Session">Session<br>
+									<input type="radio" name="frametype" value="4500 AL">4500 AL<br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3>Fork</h3>
+					<div>
+						<div class="col-xs-6">
+							<h4>Manufacturer</h4>
+							<ul>
+								<li id="foxfork">Fox</li>
+								<li id="marzfork">Marzocchi</li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<h4>Model</h4>
+							<div id="thefork">
+								<div id="foxforks" class="hidden">
+									<input type="radio" name="frametype" value="Float 80">Float 80<br>
+									<input type="radio" name="frametype" value="Float 100">Float 100<br>
+									<input type="radio" name="frametype" value="Float 120">Float 120<br>
+									<input type="radio" name="frametype" value="Talas">Talas<br>
+								</div>
+								<div id="marzforks" class="hidden">
+									<input type="radio" name="frametype" value="Marathon LR">Marathon LR<br>
+									<input type="radio" name="frametype" value="888 CR">888 CR<br>
+									<input type="radio" name="frametype" value="CORSA LR">CORSA LR<br>
+									<input type="radio" name="frametype" value="Boxxer">Boxxer<br>
+								</div>
+							</div>
+						</div>
+					</div>					</div>
+				</div>
+				<div class="center-block">
+					<input id="getweight" type="submit" name="calculate">
+					<input id="clearform" type="reset" name="reset">
+				</div>
+			</div>
+	</body>
+</html>
