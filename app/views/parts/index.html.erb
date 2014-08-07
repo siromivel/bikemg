@@ -1,0 +1,9 @@
+<h1>All Parts</h1>
+
+<ul id = "parts">
+	<% @parts.each do |part| %>
+	  <li>
+	    <%= part.component + "|" + part.manufacturer + "|" + part.weight.to_s %>
+	  </li>
+	<% end %>
+</ul>
