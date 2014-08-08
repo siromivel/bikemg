@@ -1,0 +1,7 @@
+<% @parts.each do |p| %>
+  <% if p.component.downcase == @target %>
+    <p class = "selectable">
+	  <%= p.manufacturer.capitalize + " | " + p.name.capitalize + " | " + p.weight.to_s %>
+	</p>
+  <% end %>
+<% end %>

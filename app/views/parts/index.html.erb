@@ -1,29 +1,37 @@
 <div id = "accordion">
   <h3>Frame</h3>
-  <div id = "frame">
-    <% @parts.each do |p| %>
-	  <% if p.component.downcase == "frame" %>
-		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
-		<br>
-	  <% end %>
-	<% end %>
+  <div class = "selectable">
+    <% @target = "frame" %>
+    <%= render "part" %>
   </div>
   <h3>Fork</h3>
-  <div id = "fork">
-    <% @parts.each do |p| %>
-	  <% if p.component.downcase == "fork" %>
-		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
-		<br>
-	  <% end %>
-	<% end %>
+  <div>
+    <% @target = "fork" %>
+    <%= render "part" %>
   </div>
   <h3>Handlebars</h3>
-  <div id = "handlebars">
-    <% @parts.each do |p| %>
-	  <% if p.component.downcase == "handlebars" %>
-		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
-		<br>
-	  <% end %>
-	<% end %>
+  <div>
+    <% @target = "handlebars" %>
+    <%= render "part" %>  
+  </div>
+  <h3>Wheelset</h3>
+  <div>
+    <% @target = "wheelset" %>
+    <%= render "part" %>  
+  </div>
+  <h3>Bottom Bracket</h3>
+  <div>
+    <% @target = "bottom_bracket" %>
+    <%= render "part" %>  
   </div>
 </div>
+<script>
+  $(function() {
+    $('.selectable').selectable();
+  });
+</script>
+<script>
+  $(function() {
+    $("#accordion").accordion();
+  });
+</script>
