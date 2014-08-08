@@ -1,9 +1,29 @@
-<h1>All Parts</h1>
-
-<ul id = "parts">
-	<% @parts.each do |part| %>
-	  <li>
-	    <%= part.component + "|" + part.manufacturer + "|" + part.weight.to_s %>
-	  </li>
+<div id = "accordion">
+  <h3>Frame</h3>
+  <div id = "frame">
+    <% @parts.each do |p| %>
+	  <% if p.component.downcase == "frame" %>
+		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
+		<br>
+	  <% end %>
 	<% end %>
-</ul>
+  </div>
+  <h3>Fork</h3>
+  <div id = "fork">
+    <% @parts.each do |p| %>
+	  <% if p.component.downcase == "fork" %>
+		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
+		<br>
+	  <% end %>
+	<% end %>
+  </div>
+  <h3>Handlebars</h3>
+  <div id = "handlebars">
+    <% @parts.each do |p| %>
+	  <% if p.component.downcase == "handlebars" %>
+		<%= p.name.capitalize + " | " + p.manufacturer.capitalize + " | " + p.weight.to_s %>
+		<br>
+	  <% end %>
+	<% end %>
+  </div>
+</div>
