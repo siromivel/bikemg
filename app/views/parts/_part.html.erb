@@ -1,7 +1,13 @@
-<% @parts.each do |p| %>
-  <% if p.component.downcase == @target %>
-    <p class = "selectable">
-	  <%= p.manufacturer.capitalize + " | " + p.name.capitalize + " | " + p.weight.to_s %>
-	</p>
-  <% end %>
-<% end %>
+<h3><%= @target.capitalize %></h3>
+<div>
+  <fieldset class = <%= @target %> >
+    <% @parts.each do |p| %>
+      <% if p.component.downcase == @target %>
+        <p class = "selectable">
+	      <input type = "radio" name = @target value = <%= p.id %> >
+	      <%= p.manufacturer.capitalize + " | " + p.name.capitalize + " | " + p.weight.to_s %>
+	    </p>
+      <% end %>
+    <% end %>
+  </fieldset>
+</div>

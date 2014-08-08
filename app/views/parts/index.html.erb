@@ -1,29 +1,29 @@
 <div id = "accordion">
-  <h3>Frame</h3>
-  <div class = "selectable">
-    <% @target = "frame" %>
-    <%= render "part" %>
-  </div>
-  <h3>Fork</h3>
-  <div>
-    <% @target = "fork" %>
-    <%= render "part" %>
-  </div>
-  <h3>Handlebars</h3>
-  <div>
-    <% @target = "handlebars" %>
-    <%= render "part" %>  
-  </div>
-  <h3>Wheelset</h3>
-  <div>
-    <% @target = "wheelset" %>
-    <%= render "part" %>  
-  </div>
-  <h3>Bottom Bracket</h3>
-  <div>
-    <% @target = "bottom_bracket" %>
-    <%= render "part" %>  
-  </div>
+  
+  <% @target = "frame" %>
+  <%= render "part" %>
+  
+  <% @target = "fork" %>
+  <%= render "part" %>
+  
+  <% @target = "wheelset" %>
+  <%= render "part" %>
+  
+  <% @target = "handlebars" %>
+  <%= render "part" %>
+  
+  <% @target = "stem" %>
+  <%= render "part" %>
+  
+  <% @target = "seat" %>
+  <%= render "part" %>
+  
+  <% @target = "seatpost" %>
+  <%= render "part" %>
+  
+  <% @target = "brakes" %>
+  <%= render "part" %>
+  
 </div>
 <script>
   $(function() {
