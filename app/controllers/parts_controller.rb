@@ -8,4 +8,7 @@ class PartsController < ApplicationController
     @part = Part.find(params[:id])
   end
 
+  def create
+    index
+  end
 end

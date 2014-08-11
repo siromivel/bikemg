@@ -1,30 +1,32 @@
-<div id = "accordion">
+<%= form_tag('/parts', remote: true) do -%>
+  <div id = "accordion">
+    <% @target = "frame" %>
+    <%= render "part" %>
   
-  <% @target = "frame" %>
-  <%= render "part" %>
+    <% @target = "fork" %>
+    <%= render "part" %>
   
-  <% @target = "fork" %>
-  <%= render "part" %>
+    <% @target = "wheelset" %>
+    <%= render "part" %>
   
-  <% @target = "wheelset" %>
-  <%= render "part" %>
+    <% @target = "handlebars" %>
+    <%= render "part" %>
   
-  <% @target = "handlebars" %>
-  <%= render "part" %>
+    <% @target = "stem" %>
+    <%= render "part" %>
   
-  <% @target = "stem" %>
-  <%= render "part" %>
+    <% @target = "seat" %>
+    <%= render "part" %>
   
-  <% @target = "seat" %>
-  <%= render "part" %>
+    <% @target = "seatpost" %>
+    <%= render "part" %>
   
-  <% @target = "seatpost" %>
-  <%= render "part" %>
-  
-  <% @target = "brakes" %>
-  <%= render "part" %>
-  
-</div>
+    <% @target = "brakes" %>
+    <%= render "part" %>
+
+  </div>
+  <div id = "results"></div>
+<% end %>
 <script>
   $(function() {
     $("#accordion").accordion();
