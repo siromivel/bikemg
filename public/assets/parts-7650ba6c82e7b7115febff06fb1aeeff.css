@@ -1,0 +1,31 @@
+/* line 4, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+#accordion {
+  width: 66%;
+  height: 80%;
+}
+
+/* line 7, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+.left, input {
+  float: left;
+}
+
+/* line 9, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+.left {
+  padding-left: 0.3%;
+}
+
+/* line 11, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+.right {
+  float: right;
+}
+
+/* line 13, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+.right, .left, .middle {
+  width: 33%;
+}
+
+/* line 15, C:/Users/Levi/Documents/Web Development/Projects/BikemgRails/Bikemg/app/assets/stylesheets/parts.css.sass */
+input {
+  vertical-align: center;
+  display: inline-block;
+}
