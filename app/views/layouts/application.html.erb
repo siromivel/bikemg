@@ -11,6 +11,7 @@
   <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
   <script>
     $(function() {
+	  $("input[type=radio]").prop('checked', false);
 	  $("input[type=radio]").click(function() {
 	    var total = 0;
 		$("input:checked[type=radio]").each(function() {
